@@ -1,0 +1,18 @@
+name: cloud_storage_signer
+description: Generates cloud storage signed url.
+# version: 1.0.0
+# homepage: https://www.example.com
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  enum_to_string:
+  crypto: ^3.0.1
+  intl:
+  googleapis:
+  googleapis_auth:
+
+dev_dependencies:
+  pedantic: ^1.9.0
+  test: ^1.14.4
