@@ -15,7 +15,6 @@ main() {
   
   var cloudStorageSigner = CloudStorageSigner(
     serviceAccountCredentials: credential,
-    serviceAccountEmailOrId: serviceAccountName,
   );
 
   var url = await cloudStorageSigner.generateSignedUrl(

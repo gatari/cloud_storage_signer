@@ -10,12 +10,10 @@ import 'package:path/path.dart' as path;
 
 class CloudStorageSigner {
   final auth.ServiceAccountCredentials serviceAccountCredentials;
-  final String serviceAccountEmailOrId;
   final RS256Signer signer;
 
   CloudStorageSigner({
     required this.serviceAccountCredentials,
-    required this.serviceAccountEmailOrId,
   }) : signer = RS256Signer(serviceAccountCredentials.privateRSAKey);
 
   Future<String> generateSignedUrl({

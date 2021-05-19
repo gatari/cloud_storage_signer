@@ -14,7 +14,6 @@ void main() async {
     test('generate post url', () async {
       var cloudStorageSigner = CloudStorageSigner(
         serviceAccountCredentials: credential,
-        serviceAccountEmailOrId: credential.email,
       );
 
       var url = await cloudStorageSigner.generateSignedUrl(
